@@ -8,7 +8,7 @@ import vistas.VistaBitacora;
 
 /**
  *
- * @author moise
+ * @author moise PRUEBA NETO
  */
 public class ControladorBitacora {
     public static VistaBitacora vista= new VistaBitacora();
