@@ -6,7 +6,8 @@ package vistas;
 
 import controlador.ControladorSistema;
 import java.awt.Image;
-import javax.swing.ImageIcon;
+import java.awt.Toolkit;
+import javax.swing.WindowConstants;
 
 /**
  *
@@ -19,9 +20,18 @@ public class VistaSistema extends javax.swing.JFrame {
      */
     public VistaSistema() {
         initComponents();
-
+        setCustomIcon();
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
-    
+
+    private void setCustomIcon() {
+        // Cargar el icono desde el archivo .png en la carpeta 'img'
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/pig.png"));
+        setIconImage(icon); // Establecer el icono de la ventana
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

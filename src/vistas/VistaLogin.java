@@ -4,6 +4,10 @@
  */
 package vistas;
 
+import java.awt.Image;
+import java.awt.Toolkit;
+import javax.swing.WindowConstants;
+
 /**
  *
  * @author moise
@@ -15,6 +19,15 @@ public class VistaLogin extends javax.swing.JFrame {
      */
     public VistaLogin() {
         initComponents();
+        setCustomIcon();
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    }
+     private void setCustomIcon() {
+        // Cargar el icono desde el archivo .png en la carpeta 'img'
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/pig.png"));
+        setIconImage(icon); // Establecer el icono de la ventana
     }
 
     /**
@@ -28,8 +41,14 @@ public class VistaLogin extends javax.swing.JFrame {
 
         bg = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel3 = new javax.swing.JLabel();
+        btnlogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,18 +57,25 @@ public class VistaLogin extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(120, 0, 0));
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LogoC.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(8, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 257, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        bg.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 0, 220, 400));
+        bg.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 210, 400));
 
         jPanel2.setBackground(new java.awt.Color(0, 48, 73));
 
@@ -64,7 +90,7 @@ public class VistaLogin extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(81, 81, 81)
                 .addComponent(jLabel1)
-                .addContainerGap(123, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -74,7 +100,45 @@ public class VistaLogin extends javax.swing.JFrame {
                 .addGap(16, 16, 16))
         );
 
-        bg.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 60));
+        bg.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 60));
+
+        jTextField1.setBackground(new java.awt.Color(0, 48, 73));
+        jTextField1.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
+        bg.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 180, 50));
+
+        jLabel2.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("PASSWORD");
+        bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, -1));
+
+        jPasswordField1.setBackground(new java.awt.Color(0, 48, 73));
+        jPasswordField1.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
+        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField1ActionPerformed(evt);
+            }
+        });
+        bg.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 180, 50));
+
+        jLabel3.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("USER");
+        bg.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, -1, -1));
+
+        btnlogin.setBackground(new java.awt.Color(0, 48, 73));
+        btnlogin.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        btnlogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnlogin.setText("INICIA SESION");
+        btnlogin.setBorder(null);
+        btnlogin.setBorderPainted(false);
+        btnlogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnloginActionPerformed(evt);
+            }
+        });
+        bg.add(btnlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 120, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -89,6 +153,14 @@ public class VistaLogin extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField1ActionPerformed
+
+    private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnloginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,11 +196,18 @@ public class VistaLogin extends javax.swing.JFrame {
             }
         });
     }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
+    private javax.swing.JButton btnlogin;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
