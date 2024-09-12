@@ -11,6 +11,11 @@ public class ControladorSistema {
         vista.setLocationRelativeTo(null);
         vista.setVisible(true);
     }
+    
+    public static void iniciarLogin(){
+        ControladorLogin.mostrar();
+        System.out.println("Iniciar login");
+    }
 
     public static void iniciarVentas() {
         System.out.println("Inica Ventas desde el controlador");

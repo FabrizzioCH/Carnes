@@ -4,8 +4,11 @@
  */
 package vistas;
 
+import controlador.ControladorLogin;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
 /**
@@ -44,11 +47,11 @@ public class VistaLogin extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        textLoginUsername = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        textLoginPassword = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
-        btnlogin = new javax.swing.JButton();
+        btnLoginEntrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -102,43 +105,41 @@ public class VistaLogin extends javax.swing.JFrame {
 
         bg.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 60));
 
-        jTextField1.setBackground(new java.awt.Color(0, 48, 73));
-        jTextField1.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        bg.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 180, 50));
+        textLoginUsername.setBackground(new java.awt.Color(0, 48, 73));
+        textLoginUsername.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        textLoginUsername.setForeground(new java.awt.Color(255, 255, 255));
+        bg.add(textLoginUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 180, 50));
 
         jLabel2.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("PASSWORD");
         bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, -1));
 
-        jPasswordField1.setBackground(new java.awt.Color(0, 48, 73));
-        jPasswordField1.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
-        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        textLoginPassword.setBackground(new java.awt.Color(0, 48, 73));
+        textLoginPassword.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        textLoginPassword.setForeground(new java.awt.Color(255, 255, 255));
+        textLoginPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                textLoginPasswordActionPerformed(evt);
             }
         });
-        bg.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 180, 50));
+        bg.add(textLoginPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 180, 50));
 
         jLabel3.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("USER");
         bg.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, -1, -1));
 
-        btnlogin.setBackground(new java.awt.Color(0, 48, 73));
-        btnlogin.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        btnlogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnlogin.setText("INICIA SESION");
-        btnlogin.setBorder(null);
-        btnlogin.setBorderPainted(false);
-        btnlogin.addActionListener(new java.awt.event.ActionListener() {
+        btnLoginEntrar.setBackground(new java.awt.Color(0, 48, 73));
+        btnLoginEntrar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        btnLoginEntrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnLoginEntrar.setText("INICIA SESION");
+        btnLoginEntrar.setBorder(null);
+        btnLoginEntrar.setBorderPainted(false);
+        btnLoginEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnloginActionPerformed(evt);
+                btnLoginEntrarActionPerformed(evt);
             }
         });
-        bg.add(btnlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 120, 40));
+        bg.add(btnLoginEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 120, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -154,13 +155,14 @@ public class VistaLogin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void textLoginPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textLoginPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_textLoginPasswordActionPerformed
 
-    private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
+    private void btnLoginEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginEntrarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnloginActionPerformed
+        ControladorLogin.login();
+    }//GEN-LAST:event_btnLoginEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -196,18 +198,26 @@ public class VistaLogin extends javax.swing.JFrame {
             }
         });
     }
+
+    public JPasswordField getTextLoginPassword() {
+        return textLoginPassword;
+    }
+
+    public JTextField getTextLoginUsername() {
+        return textLoginUsername;
+    }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
-    private javax.swing.JButton btnlogin;
+    private javax.swing.JButton btnLoginEntrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPasswordField textLoginPassword;
+    private javax.swing.JTextField textLoginUsername;
     // End of variables declaration//GEN-END:variables
 }

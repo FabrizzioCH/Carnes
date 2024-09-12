@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/moise/OneDrive/Documentos/NetBeansProjects/POO/Carnes/src/vistas/VistaLogin.java</file>
-            <file>file:/C:/Users/moise/OneDrive/Documentos/NetBeansProjects/POO/Carnes/src/vistas/VistaSistema.java</file>
+            <file>file:/C:/Users/neto-/Documents/NetBeansProjects/Carnes/src/controlador/Main.java</file>
+            <file>file:/C:/Users/neto-/Documents/NetBeansProjects/Carnes/src/controlador/ControladorLogin.java</file>
+            <file>file:/C:/Users/neto-/Documents/NetBeansProjects/Carnes/src/controlador/ControladorProductos.java</file>
+            <file>file:/C:/Users/neto-/Documents/NetBeansProjects/Carnes/src/controlador/ControladorSistema.java</file>
+            <file>file:/C:/Users/neto-/Documents/NetBeansProjects/Carnes/src/vistas/VistaLogin.java</file>
         </group>
     </open-files>
 </project-private>
