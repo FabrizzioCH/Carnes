@@ -5,6 +5,8 @@
 package vistas;
 
 import controlador.ControladorSistema;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -17,9 +19,9 @@ public class VistaSistema extends javax.swing.JFrame {
      */
     public VistaSistema() {
         initComponents();
-            
-    }
 
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,95 +32,157 @@ public class VistaSistema extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        bg = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        cn = new javax.swing.JPanel();
         lblSistemaTitulo = new javax.swing.JLabel();
         btnSistemaVentas = new javax.swing.JButton();
         btnSistemaUsusarios = new javax.swing.JButton();
-        btnSistemaBitacora = new javax.swing.JButton();
         btnSistemaProductos = new javax.swing.JButton();
-        lblSistemaIcono = new javax.swing.JLabel();
+        btnSistemaBitacora = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
 
-        lblSistemaTitulo.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        bg.setBackground(new java.awt.Color(255, 255, 255));
+        bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(193, 18, 31));
+
+        jLabel1.setFont(new java.awt.Font("Roboto Black", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("BIENVENIDO");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(323, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(257, 257, 257))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel1)
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
+
+        bg.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 0, 800, 110));
+
+        cn.setBackground(new java.awt.Color(120, 0, 0));
+        cn.setForeground(new java.awt.Color(120, 0, 0));
+
+        lblSistemaTitulo.setFont(new java.awt.Font("Roboto Black", 1, 36)); // NOI18N
+        lblSistemaTitulo.setForeground(new java.awt.Color(255, 255, 255));
         lblSistemaTitulo.setText("Sistema");
 
-        btnSistemaVentas.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnSistemaVentas.setBackground(new java.awt.Color(120, 0, 0));
+        btnSistemaVentas.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        btnSistemaVentas.setForeground(new java.awt.Color(255, 255, 255));
         btnSistemaVentas.setText("VENTAS");
+        btnSistemaVentas.setBorder(null);
+        btnSistemaVentas.setBorderPainted(false);
+        btnSistemaVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSistemaVentas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSistemaVentasActionPerformed(evt);
             }
         });
 
-        btnSistemaUsusarios.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnSistemaUsusarios.setBackground(new java.awt.Color(120, 0, 0));
+        btnSistemaUsusarios.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        btnSistemaUsusarios.setForeground(new java.awt.Color(255, 255, 255));
         btnSistemaUsusarios.setText("USUARIOS");
+        btnSistemaUsusarios.setBorder(null);
+        btnSistemaUsusarios.setBorderPainted(false);
+        btnSistemaUsusarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSistemaUsusarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSistemaUsusariosActionPerformed(evt);
             }
         });
 
-        btnSistemaBitacora.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        btnSistemaBitacora.setText("BITACORA");
-        btnSistemaBitacora.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSistemaBitacoraActionPerformed(evt);
-            }
-        });
-
-        btnSistemaProductos.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnSistemaProductos.setBackground(new java.awt.Color(120, 0, 0));
+        btnSistemaProductos.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        btnSistemaProductos.setForeground(new java.awt.Color(255, 255, 255));
         btnSistemaProductos.setText("PRODUCTOS");
+        btnSistemaProductos.setBorder(null);
+        btnSistemaProductos.setBorderPainted(false);
+        btnSistemaProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSistemaProductos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSistemaProductosActionPerformed(evt);
             }
         });
 
-        lblSistemaIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/carne.png"))); // NOI18N
-        lblSistemaIcono.setText("jLabel2");
+        btnSistemaBitacora.setBackground(new java.awt.Color(120, 0, 0));
+        btnSistemaBitacora.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        btnSistemaBitacora.setForeground(new java.awt.Color(255, 255, 255));
+        btnSistemaBitacora.setText("BITACORA");
+        btnSistemaBitacora.setBorder(null);
+        btnSistemaBitacora.setBorderPainted(false);
+        btnSistemaBitacora.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSistemaBitacora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSistemaBitacoraActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/LogoC.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jLabel2.setMaximumSize(new java.awt.Dimension(160, 160));
+
+        javax.swing.GroupLayout cnLayout = new javax.swing.GroupLayout(cn);
+        cn.setLayout(cnLayout);
+        cnLayout.setHorizontalGroup(
+            cnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cnLayout.createSequentialGroup()
+                .addGap(0, 19, Short.MAX_VALUE)
+                .addComponent(lblSistemaTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cnLayout.createSequentialGroup()
+                .addGroup(cnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnSistemaVentas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSistemaUsusarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSistemaBitacora, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSistemaProductos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+        );
+        cnLayout.setVerticalGroup(
+            cnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(cnLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(lblSistemaTitulo)
+                .addGap(18, 18, 18)
+                .addComponent(btnSistemaVentas, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSistemaUsusarios, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSistemaBitacora, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSistemaProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        bg.add(cn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 749));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(btnSistemaVentas, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(btnSistemaUsusarios)
-                        .addGap(27, 27, 27)
-                        .addComponent(btnSistemaBitacora)
-                        .addGap(30, 30, 30)
-                        .addComponent(btnSistemaProductos))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblSistemaTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblSistemaIcono, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(53, Short.MAX_VALUE))
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(lblSistemaTitulo)
-                        .addGap(30, 30, 30))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblSistemaIcono)
-                        .addGap(18, 18, 18)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSistemaVentas)
-                    .addComponent(btnSistemaUsusarios)
-                    .addComponent(btnSistemaBitacora)
-                    .addComponent(btnSistemaProductos))
-                .addContainerGap(276, Short.MAX_VALUE))
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -129,23 +193,13 @@ public class VistaSistema extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnSistemaUsusariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaUsusariosActionPerformed
-        System.out.println("Boton Usuarios");
-        ControladorSistema.iniciarUsuarios();
-    }//GEN-LAST:event_btnSistemaUsusariosActionPerformed
-
-    private void btnSistemaVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaVentasActionPerformed
-        System.out.println("Boton Ventas");
-        ControladorSistema.iniciarVentas();
-
-
-    }//GEN-LAST:event_btnSistemaVentasActionPerformed
 
     private void btnSistemaBitacoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaBitacoraActionPerformed
         System.out.println("Boton Bitacoras");
@@ -156,6 +210,17 @@ public class VistaSistema extends javax.swing.JFrame {
         System.out.println("Boton Productos");
         ControladorSistema.iniciarProductos();
     }//GEN-LAST:event_btnSistemaProductosActionPerformed
+
+    private void btnSistemaUsusariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaUsusariosActionPerformed
+        System.out.println("Boton Usuarios");
+        ControladorSistema.iniciarUsuarios();
+    }//GEN-LAST:event_btnSistemaUsusariosActionPerformed
+
+    private void btnSistemaVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaVentasActionPerformed
+        System.out.println("Boton Ventas");
+        ControladorSistema.iniciarVentas();
+
+    }//GEN-LAST:event_btnSistemaVentasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -194,28 +259,17 @@ public class VistaSistema extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel bg;
     private javax.swing.JButton btnSistemaBitacora;
     private javax.swing.JButton btnSistemaProductos;
     private javax.swing.JButton btnSistemaUsusarios;
     private javax.swing.JButton btnSistemaVentas;
+    private javax.swing.JPanel cn;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblSistemaIcono;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblSistemaTitulo;
     // End of variables declaration//GEN-END:variables
 
-    public javax.swing.JButton getBtnSistemaBitacora() {
-        return btnSistemaBitacora;
-    }
-
-    public javax.swing.JButton getBtnSistemaProductos() {
-        return btnSistemaProductos;
-    }
-
-    public javax.swing.JButton getBtnSistemaUsusarios() {
-        return btnSistemaUsusarios;
-    }
-
-    public javax.swing.JButton getBtnSistemaVentas() {
-        return btnSistemaVentas;
-    }
 }
