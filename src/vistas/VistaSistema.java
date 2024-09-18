@@ -52,6 +52,8 @@ public class VistaSistema extends javax.swing.JFrame {
         btnSistemaProductos = new javax.swing.JButton();
         btnSistemaBitacora = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        btnSistemaClientes = new javax.swing.JButton();
+        btnSistemaNuevaVenta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -148,6 +150,32 @@ public class VistaSistema extends javax.swing.JFrame {
         jLabel2.setText("jLabel2");
         jLabel2.setMaximumSize(new java.awt.Dimension(160, 160));
 
+        btnSistemaClientes.setBackground(new java.awt.Color(120, 0, 0));
+        btnSistemaClientes.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        btnSistemaClientes.setForeground(new java.awt.Color(255, 255, 255));
+        btnSistemaClientes.setText("CLIENTES");
+        btnSistemaClientes.setBorder(null);
+        btnSistemaClientes.setBorderPainted(false);
+        btnSistemaClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSistemaClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSistemaClientesActionPerformed(evt);
+            }
+        });
+
+        btnSistemaNuevaVenta.setBackground(new java.awt.Color(120, 0, 0));
+        btnSistemaNuevaVenta.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        btnSistemaNuevaVenta.setForeground(new java.awt.Color(255, 255, 255));
+        btnSistemaNuevaVenta.setText("NUEVA VENTA");
+        btnSistemaNuevaVenta.setBorder(null);
+        btnSistemaNuevaVenta.setBorderPainted(false);
+        btnSistemaNuevaVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSistemaNuevaVenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSistemaNuevaVentaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout cnLayout = new javax.swing.GroupLayout(cn);
         cn.setLayout(cnLayout);
         cnLayout.setHorizontalGroup(
@@ -161,7 +189,9 @@ public class VistaSistema extends javax.swing.JFrame {
                     .addComponent(btnSistemaVentas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnSistemaUsusarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnSistemaBitacora, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSistemaProductos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnSistemaProductos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSistemaClientes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSistemaNuevaVenta, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
@@ -178,7 +208,11 @@ public class VistaSistema extends javax.swing.JFrame {
                 .addComponent(btnSistemaBitacora, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSistemaProductos, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSistemaClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSistemaNuevaVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -232,6 +266,14 @@ public class VistaSistema extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnSistemaVentasActionPerformed
 
+    private void btnSistemaClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSistemaClientesActionPerformed
+
+    private void btnSistemaNuevaVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaNuevaVentaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSistemaNuevaVentaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -271,6 +313,8 @@ public class VistaSistema extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
     private javax.swing.JButton btnSistemaBitacora;
+    private javax.swing.JButton btnSistemaClientes;
+    private javax.swing.JButton btnSistemaNuevaVenta;
     private javax.swing.JButton btnSistemaProductos;
     private javax.swing.JButton btnSistemaUsusarios;
     private javax.swing.JButton btnSistemaVentas;
