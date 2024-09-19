@@ -27,7 +27,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="menuVentas">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+1"/>
+                  <KeyStroke key="Ctrl+NUMPAD1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Ventas"/>
               </Properties>
@@ -38,7 +38,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="MenuProductos">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+2"/>
+                  <KeyStroke key="Ctrl+NUMPAD1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Productos"/>
               </Properties>
@@ -49,7 +49,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="menuUsuarios">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+3"/>
+                  <KeyStroke key="Ctrl+NUMPAD3"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Usuarios"/>
               </Properties>
@@ -60,7 +60,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="menuBitacoras">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+4"/>
+                  <KeyStroke key="Ctrl+NUMPAD4"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Bitacoras"/>
               </Properties>
