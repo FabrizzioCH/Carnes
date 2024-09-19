@@ -28,7 +28,7 @@ public class VistaSistema extends javax.swing.JFrame {
 
     private void setCustomIcon() {
         // Cargar el icono desde el archivo .png en la carpeta 'img'
-        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/pig.png"));
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/icon.png"));
         setIconImage(icon); // Establecer el icono de la ventana
     }
 
@@ -41,6 +41,9 @@ public class VistaSistema extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
         bg = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -54,6 +57,19 @@ public class VistaSistema extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         btnSistemaClientes = new javax.swing.JButton();
         btnSistemaNuevaVenta = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        menuVentas = new javax.swing.JMenuItem();
+        MenuProductos = new javax.swing.JMenuItem();
+        menuUsuarios = new javax.swing.JMenuItem();
+        menuBitacoras = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+
+        jMenuItem3.setText("jMenuItem3");
+
+        jMenuItem4.setText("jMenuItem4");
+
+        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -229,6 +245,51 @@ public class VistaSistema extends javax.swing.JFrame {
             .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        jMenu1.setText("Operaciones");
+
+        menuVentas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        menuVentas.setText("Ventas");
+        menuVentas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuVentasActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuVentas);
+
+        MenuProductos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_2, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        MenuProductos.setText("Productos");
+        MenuProductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuProductosActionPerformed(evt);
+            }
+        });
+        jMenu1.add(MenuProductos);
+
+        menuUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_3, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        menuUsuarios.setText("Usuarios");
+        menuUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuUsuariosActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuUsuarios);
+
+        menuBitacoras.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_4, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        menuBitacoras.setText("Bitacoras");
+        menuBitacoras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBitacorasActionPerformed(evt);
+            }
+        });
+        jMenu1.add(menuBitacoras);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Sesión");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -274,6 +335,22 @@ public class VistaSistema extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSistemaNuevaVentaActionPerformed
 
+    private void MenuProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuProductosActionPerformed
+        ControladorSistema.iniciarProductos();
+    }//GEN-LAST:event_MenuProductosActionPerformed
+
+    private void menuUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuUsuariosActionPerformed
+        ControladorSistema.iniciarUsuarios();
+    }//GEN-LAST:event_menuUsuariosActionPerformed
+
+    private void menuVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuVentasActionPerformed
+        ControladorSistema.iniciarVentas();
+    }//GEN-LAST:event_menuVentasActionPerformed
+
+    private void menuBitacorasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBitacorasActionPerformed
+        ControladorSistema.iniciarBitacora();
+    }//GEN-LAST:event_menuBitacorasActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -311,6 +388,7 @@ public class VistaSistema extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem MenuProductos;
     private javax.swing.JPanel bg;
     private javax.swing.JButton btnSistemaBitacora;
     private javax.swing.JButton btnSistemaClientes;
@@ -321,9 +399,18 @@ public class VistaSistema extends javax.swing.JFrame {
     private javax.swing.JPanel cn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblSistemaTitulo;
+    private javax.swing.JMenuItem menuBitacoras;
+    private javax.swing.JMenuItem menuUsuarios;
+    private javax.swing.JMenuItem menuVentas;
     // End of variables declaration//GEN-END:variables
 
 }

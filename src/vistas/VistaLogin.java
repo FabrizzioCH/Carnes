@@ -29,7 +29,7 @@ public class VistaLogin extends javax.swing.JFrame {
     }
      private void setCustomIcon() {
         // Cargar el icono desde el archivo .png en la carpeta 'img'
-        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/pig.png"));
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/iconpig.png"));
         setIconImage(icon); // Establecer el icono de la ventana
     }
 
@@ -129,6 +129,7 @@ public class VistaLogin extends javax.swing.JFrame {
         btnLoginEntrar.setText("INICIA SESION");
         btnLoginEntrar.setBorder(null);
         btnLoginEntrar.setBorderPainted(false);
+        btnLoginEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLoginEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginEntrarActionPerformed(evt);
