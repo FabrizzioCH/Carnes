@@ -11,6 +11,9 @@ public class ControladorSistema {
         vista.setLocationRelativeTo(null);
         vista.setVisible(true);
     }
+    public static void ocultar(){
+    vista.setVisible(false);
+    }
     
     public static void iniciarLogin(){
         ControladorLogin.mostrar();
@@ -36,4 +39,15 @@ public class ControladorSistema {
         System.out.println("Iniciar Productos desde el controlador");
         ControladorProductos.mostrar();
     }
+    public static void cerrarSesion(){
+        ocultar();
+        ControladorLogin.limpiar();
+    ControladorLogin.mostrar();
+    }
+    public static void Salir(){
+    System.exit(0);
+    }
+
+    
+    
 }

@@ -64,6 +64,8 @@ public class VistaSistema extends javax.swing.JFrame {
         menuUsuarios = new javax.swing.JMenuItem();
         menuBitacoras = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        menuCerrarS = new javax.swing.JMenuItem();
+        menuSalir = new javax.swing.JMenuItem();
 
         jMenuItem3.setText("jMenuItem3");
 
@@ -286,6 +288,25 @@ public class VistaSistema extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Sesión");
+
+        menuCerrarS.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_NUMPAD9, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        menuCerrarS.setText("Cerrar Sesion");
+        menuCerrarS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuCerrarSActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuCerrarS);
+
+        menuSalir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_NUMPAD0, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        menuSalir.setText("Salir");
+        menuSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuSalirActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuSalir);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -351,6 +372,15 @@ public class VistaSistema extends javax.swing.JFrame {
         ControladorSistema.iniciarBitacora();
     }//GEN-LAST:event_menuBitacorasActionPerformed
 
+    private void menuSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuSalirActionPerformed
+      ControladorSistema.Salir();
+    }//GEN-LAST:event_menuSalirActionPerformed
+      
+    private void menuCerrarSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCerrarSActionPerformed
+      ControladorSistema.cerrarSesion();
+
+    }//GEN-LAST:event_menuCerrarSActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -409,6 +439,8 @@ public class VistaSistema extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblSistemaTitulo;
     private javax.swing.JMenuItem menuBitacoras;
+    private javax.swing.JMenuItem menuCerrarS;
+    private javax.swing.JMenuItem menuSalir;
     private javax.swing.JMenuItem menuUsuarios;
     private javax.swing.JMenuItem menuVentas;
     // End of variables declaration//GEN-END:variables
