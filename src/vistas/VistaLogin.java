@@ -29,7 +29,7 @@ public class VistaLogin extends javax.swing.JFrame {
     }
      private void setCustomIcon() {
         // Cargar el icono desde el archivo .png en la carpeta 'img'
-        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/iconpig.png"));
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/iconcerdo.png"));
         setIconImage(icon); // Establecer el icono de la ventana
     }
 
