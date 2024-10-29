@@ -4,6 +4,8 @@
  */
 package vistas;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.WindowConstants;
 
 /**
@@ -19,6 +21,11 @@ public class VistaProductos extends javax.swing.JFrame {
         initComponents();
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 
+    }
+    private void setCustomIcon() {
+        // Cargar el icono desde el archivo .png en la carpeta 'img'
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/iconcerdo.png"));
+        setIconImage(icon); // Establecer el icono de la ventana
     }
 
     /**

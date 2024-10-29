@@ -29,7 +29,7 @@ public class VistaLogin extends javax.swing.JFrame {
     }
      private void setCustomIcon() {
         // Cargar el icono desde el archivo .png en la carpeta 'img'
-        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/iconpig.png"));
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/iconcerdo.png"));
         setIconImage(icon); // Establecer el icono de la ventana
     }
 
@@ -75,7 +75,7 @@ public class VistaLogin extends javax.swing.JFrame {
 
         bg.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 210, 400));
 
-        jPanel2.setBackground(new java.awt.Color(0, 48, 73));
+        jPanel2.setBackground(new java.awt.Color(193, 18, 31));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -100,16 +100,21 @@ public class VistaLogin extends javax.swing.JFrame {
 
         bg.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 60));
 
-        textLoginUsername.setBackground(new java.awt.Color(0, 48, 73));
+        textLoginUsername.setBackground(new java.awt.Color(193, 18, 31));
         textLoginUsername.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
         textLoginUsername.setForeground(new java.awt.Color(255, 255, 255));
+        textLoginUsername.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textLoginUsernameActionPerformed(evt);
+            }
+        });
         bg.add(textLoginUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 180, 50));
 
         jLabel2.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
         jLabel2.setText("PASSWORD");
         bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 180, -1, -1));
 
-        textLoginPassword.setBackground(new java.awt.Color(0, 48, 73));
+        textLoginPassword.setBackground(new java.awt.Color(193, 18, 31));
         textLoginPassword.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
         textLoginPassword.setForeground(new java.awt.Color(255, 255, 255));
         textLoginPassword.addActionListener(new java.awt.event.ActionListener() {
@@ -123,7 +128,7 @@ public class VistaLogin extends javax.swing.JFrame {
         jLabel3.setText("USER");
         bg.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, -1, -1));
 
-        btnLoginEntrar.setBackground(new java.awt.Color(0, 48, 73));
+        btnLoginEntrar.setBackground(new java.awt.Color(193, 18, 31));
         btnLoginEntrar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         btnLoginEntrar.setForeground(new java.awt.Color(255, 255, 255));
         btnLoginEntrar.setText("INICIA SESION");
@@ -159,6 +164,10 @@ public class VistaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
         ControladorLogin.login();
     }//GEN-LAST:event_btnLoginEntrarActionPerformed
+
+    private void textLoginUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textLoginUsernameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textLoginUsernameActionPerformed
 
     /**
      * @param args the command line arguments
