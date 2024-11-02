@@ -5,6 +5,8 @@
 package vistas;
 
 import controlador.ControladorUsuarios;
+import java.awt.Image;
+import java.awt.Toolkit;
 import javax.swing.WindowConstants;
 
 /**
@@ -19,8 +21,16 @@ public class VistaUsuarios extends javax.swing.JFrame {
     public VistaUsuarios() {
         initComponents();
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        setCustomIcon();
+        setLocationRelativeTo(null);
+        setResizable(false);
     }
 
+    private void setCustomIcon() {
+        // Cargar el icono desde el archivo .png en la carpeta 'img'
+        Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/iconcerdo.png"));
+        setIconImage(icon); // Establecer el icono de la ventana
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -81,7 +91,7 @@ public class VistaUsuarios extends javax.swing.JFrame {
 
         jLabel6.setText("Usuario");
 
-        jLabel7.setText("Contraseña");
+        jLabel7.setText("Contraseï¿½a");
 
         jLabel8.setText("Estado");
 

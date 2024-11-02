@@ -20,7 +20,11 @@ public class VistaVentas extends javax.swing.JFrame {
     public VistaVentas() {
         initComponents();
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        setCustomIcon();
+        setLocationRelativeTo(null);
+        setResizable(false);
     }
+
     private void setCustomIcon() {
         // Cargar el icono desde el archivo .png en la carpeta 'img'
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/iconcerdo.png"));

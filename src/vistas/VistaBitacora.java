@@ -23,7 +23,6 @@ public class VistaBitacora extends javax.swing.JFrame {
         setCustomIcon();
         setLocationRelativeTo(null);
         setResizable(false);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
     private void setCustomIcon() {
