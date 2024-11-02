@@ -79,4 +79,10 @@ private int estado;
         this.estado = estado;
     }
 
+    @Override
+    public String toString() {
+        return "id=" + id + ", usuario=" + usuario + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellidoPaterno=" + apellidoPaterno + ", apellidoMaterno=" + apellidoMaterno + ", estado=" + estado;
+    }
+
+    
 }

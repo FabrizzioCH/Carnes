@@ -91,7 +91,13 @@ public class VistaUsuarios extends javax.swing.JFrame {
 
         jLabel6.setText("Usuario");
 
-        jLabel7.setText("ContraseÃ±a");
+        jLabel7.setText("Contraseña");
+
+        txtUsuariosContrasena.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuariosContrasenaActionPerformed(evt);
+            }
+        });
 
         jLabel8.setText("Estado");
 
@@ -202,6 +208,10 @@ public class VistaUsuarios extends javax.swing.JFrame {
     private void txtUsuariosIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuariosIdActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsuariosIdActionPerformed
+
+    private void txtUsuariosContrasenaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuariosContrasenaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuariosContrasenaActionPerformed
 
     /**
      * @param args the command line arguments

@@ -328,22 +328,18 @@ public class VistaSistema extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSistemaBitacoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaBitacoraActionPerformed
-        System.out.println("Boton Bitacoras");
         ControladorSistema.iniciarBitacora();
     }//GEN-LAST:event_btnSistemaBitacoraActionPerformed
 
     private void btnSistemaProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaProductosActionPerformed
-        System.out.println("Boton Productos");
         ControladorSistema.iniciarProductos();
     }//GEN-LAST:event_btnSistemaProductosActionPerformed
 
     private void btnSistemaUsusariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaUsusariosActionPerformed
-        System.out.println("Boton Usuarios");
         ControladorSistema.iniciarUsuarios();
     }//GEN-LAST:event_btnSistemaUsusariosActionPerformed
 
     private void btnSistemaVentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSistemaVentasActionPerformed
-        System.out.println("Boton Ventas");
         ControladorSistema.iniciarVentas();
 
     }//GEN-LAST:event_btnSistemaVentasActionPerformed

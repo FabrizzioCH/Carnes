@@ -8,7 +8,6 @@ public class ControladorLogin {
     public static VistaLogin vista= new VistaLogin();
      
         public static void mostrar() {
-      // System.out.println("Mostrar");
         vista.setLocationRelativeTo(null);
         vista.setVisible(true);
     }
@@ -16,7 +15,6 @@ public class ControladorLogin {
     public static void login() {
         var nombreUsuario = vista.getTextLoginUsername().getText().trim();
         var passwordUsuario = vista.getTextLoginPassword().getText().trim();
-       // System.out.println("Usuario: "+nombreUsuario+"\nContraseña: "+passwordUsuario);
         ControladorSistema.mostrar();
         ocultar();
     }

@@ -1,4 +1,3 @@
-
 package controlador;
 
 import modelo.UsuarioDAO;
@@ -6,20 +5,22 @@ import modelo.Usuario;
 import vistas.VistaUsuarios;
 
 public class ControladorUsuarios {
-    public static VistaUsuarios vista= new VistaUsuarios();
-     
-        public static void mostrar() {
-        System.out.println("Mostrar");
+
+    public static VistaUsuarios vista = new VistaUsuarios();
+
+    public static void mostrar() {
         vista.setLocationRelativeTo(null);
         vista.setVisible(true);
-        
-            getUsuarioById(1001);
-            System.out.println(getUsuarioById(1001).getUsuario());
+
+        System.out.println(getUsuarioById(1000)); 
+        System.out.println(getUsuarioById(1001)); 
+        System.out.println(getUsuarioById(1002)); 
+           
     }
-        
-   public static Usuario getUsuarioById(int id){
-       return new UsuarioDAO().getUsuarioById(id);
-   }
+
+    public static Usuario getUsuarioById(int id) {
+        return new UsuarioDAO().getUsuarioById(id);
+    }
 
     public static void registrar() {
         var errores = new StringBuilder();
@@ -47,11 +48,11 @@ public class ControladorUsuarios {
         if (!vista.getTxtUsuariosContrasena().getText().trim().equals("")) {
             usuario.setContrasena(vista.getTxtUsuariosContrasena().getText());
         } else {
-            errores.append("El campo contraseÃ±a no debe ser vacio");
+            errores.append("El campo contraseña no debe ser vacio");
         }
 
         new UsuarioDAO().registrar(usuario);
 
     }
-    
+
 }
