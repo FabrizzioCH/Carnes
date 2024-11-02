@@ -14,6 +14,7 @@ public class ControladorUsuarios {
         vista.setVisible(true);
         
             getUsuarioById(1001);
+            System.out.println(getUsuarioById(1001).getUsuario());
     }
         
    public static Usuario getUsuarioById(int id){
@@ -43,8 +44,8 @@ public class ControladorUsuarios {
         } else {
             errores.append("El campo usuario no debe ser vacio");
         }
-        if (!vista.getTxtUsuariosPassword().getText().trim().equals("")) {
-            usuario.setContrasena(vista.getTxtUsuariosPassword().getText());
+        if (!vista.getTxtUsuariosContrasena().getText().trim().equals("")) {
+            usuario.setContrasena(vista.getTxtUsuariosContrasena().getText());
         } else {
             errores.append("El campo contraseña no debe ser vacio");
         }

@@ -53,7 +53,7 @@ public class VistaUsuarios extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         txtUsuariosUsuario = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        txtUsuariosPassword = new javax.swing.JPasswordField();
+        txtUsuariosContrasena = new javax.swing.JPasswordField();
         jLabel8 = new javax.swing.JLabel();
         txtUsuariosEstado = new javax.swing.JTextField();
         btnUsuariosRegistrar = new javax.swing.JButton();
@@ -91,7 +91,7 @@ public class VistaUsuarios extends javax.swing.JFrame {
 
         jLabel6.setText("Usuario");
 
-        jLabel7.setText("Contrase�a");
+        jLabel7.setText("Contraseña");
 
         jLabel8.setText("Estado");
 
@@ -134,7 +134,7 @@ public class VistaUsuarios extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtUsuariosUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                                    .addComponent(txtUsuariosPassword)
+                                    .addComponent(txtUsuariosContrasena)
                                     .addComponent(txtUsuariosEstado))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -182,7 +182,7 @@ public class VistaUsuarios extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel7)
-                            .addComponent(txtUsuariosPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtUsuariosContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
@@ -251,10 +251,10 @@ public class VistaUsuarios extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtUsuariosApellidoMaterno;
     private javax.swing.JTextField txtUsuariosApellidoPaterno;
+    private javax.swing.JPasswordField txtUsuariosContrasena;
     private javax.swing.JTextField txtUsuariosEstado;
     private javax.swing.JTextField txtUsuariosId;
     private javax.swing.JTextField txtUsuariosNombre;
-    private javax.swing.JPasswordField txtUsuariosPassword;
     private javax.swing.JTextField txtUsuariosUsuario;
     // End of variables declaration//GEN-END:variables
 
@@ -278,8 +278,8 @@ public class VistaUsuarios extends javax.swing.JFrame {
         return txtUsuariosNombre;
     }
 
-    public javax.swing.JPasswordField getTxtUsuariosPassword() {
-        return txtUsuariosPassword;
+    public javax.swing.JPasswordField getTxtUsuariosContrasena() {
+        return txtUsuariosContrasena;
     }
 
     public javax.swing.JTextField getTxtUsuariosUsuario() {
