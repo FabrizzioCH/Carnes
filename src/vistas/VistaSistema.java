@@ -26,14 +26,13 @@ public class VistaSistema extends javax.swing.JFrame {
         setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         
-        
-        VistaUsuarios v1=new VistaUsuarios();
-        v1.setSize(800,640);
-        v1.setLocation(0,0);
-        Contenido.removeAll();
-        Contenido.add(v1, BorderLayout.CENTER);
-        Contenido.revalidate();
-        Contenido.repaint();
+        //VistaUsuarios v1=new VistaUsuarios();
+        //v1.setSize(800,640);
+        //v1.setLocation(0,0);
+        //Contenido.removeAll();
+        //Contenido.add(v1, BorderLayout.CENTER);
+        //Contenido.revalidate();
+        //Contenido.repaint();
     }
 
     private void setCustomIcon() {

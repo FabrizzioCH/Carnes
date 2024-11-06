@@ -11,7 +11,7 @@ public class Conexion {
 //Nombre del usuario
 //Contrasena
 
-    private final String URL = "jdbc:sqlserver://DESKTOP-DB79RBD\\SQLEXPRESS:1450;databaseName=ventas;trustServerCertificate=true";
+    private final String URL = "jdbc:sqlserver://DESKTOP-MCVR7S2\\SQLEXPRESS:1450;databaseName=ventas;trustServerCertificate=true";
    // private final String USER = "user_db";
    //private final String PASSWORD = "Temporal123";
     private final String USER = "root";
