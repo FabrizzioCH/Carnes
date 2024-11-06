@@ -5,6 +5,7 @@
 package vistas;
 
 import controlador.ControladorSistema;
+import java.awt.BorderLayout;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.WindowConstants;
@@ -24,6 +25,15 @@ public class VistaSistema extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        
+        
+        VistaUsuarios v1=new VistaUsuarios();
+        v1.setSize(800,640);
+        v1.setLocation(0,0);
+        Contenido.removeAll();
+        Contenido.add(v1, BorderLayout.CENTER);
+        Contenido.revalidate();
+        Contenido.repaint();
     }
 
     private void setCustomIcon() {
@@ -57,6 +67,7 @@ public class VistaSistema extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         btnSistemaClientes = new javax.swing.JButton();
         btnSistemaNuevaVenta = new javax.swing.JButton();
+        Contenido = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         menuVentas = new javax.swing.JMenuItem();
@@ -236,6 +247,21 @@ public class VistaSistema extends javax.swing.JFrame {
 
         bg.add(cn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 749));
 
+        Contenido.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout ContenidoLayout = new javax.swing.GroupLayout(Contenido);
+        Contenido.setLayout(ContenidoLayout);
+        ContenidoLayout.setHorizontalGroup(
+            ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+        ContenidoLayout.setVerticalGroup(
+            ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 640, Short.MAX_VALUE)
+        );
+
+        bg.add(Contenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 800, 640));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -287,7 +313,7 @@ public class VistaSistema extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("SesiÃ³n");
+        jMenu2.setText("Sesión");
 
         menuCerrarS.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_NUMPAD9, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menuCerrarS.setText("Cerrar Sesion");
@@ -414,6 +440,7 @@ public class VistaSistema extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Contenido;
     private javax.swing.JMenuItem MenuProductos;
     private javax.swing.JPanel bg;
     private javax.swing.JButton btnSistemaBitacora;
